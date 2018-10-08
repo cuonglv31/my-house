@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
+		<link rel="shortcut icon" href="/frontend/img/fav.png">
 		<!-- Author Meta -->
 		<meta name="author" content="CodePixar">
 		<!-- Meta Description -->
@@ -37,14 +37,14 @@
 		</body>
         <!-- End footer Area -->		
 			<script src="{{ asset('frontend/js/vendor/jquery-2.2.4.min.js') }}"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+			<script src="{{ asset('frontend/js/popper.min.js') }}"></script>
 			<script src="{{ asset('frontend/js/vendor/bootstrap.min.js') }}"></script>
 			<script src="{{ asset('frontend/js/jquery.ajaxchimp.min.js') }}"></script>
 			<script src="{{ asset('frontend/js/owl.carousel.min.js') }}"></script>			
 			<script src="{{ asset('frontend/js/jquery.nice-select.min.js') }}"></script>
 			<script src="{{ asset('frontend/js/jquery.sticky.js') }}"></script>
 			<script src="{{ asset('frontend/js/parallax.min.js') }}"></script>
-			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+			<script src="{{ asset('frontend/js/jquery-ui.js') }}"></script>
 			<script type="text/javascript" src="{{ asset('frontend/js/simple-lightbox.min.js') }}"></script>
 			<script src="{{ asset('frontend/js/main.js') }}"></script>	
 	</html>

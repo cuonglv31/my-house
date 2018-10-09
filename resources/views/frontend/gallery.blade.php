@@ -7,23 +7,9 @@
             </div>
         </div>
         <div class="gal">
-            <a href="/frontend/img/p1.jpg"><img src="/frontend/img/p1.jpg" alt=""></a>
-            <a href="/frontend/img/p2.jpg"><img src="/frontend/img/p2.jpg" alt=""></a>
-            <a href="/frontend/img/p3.jpg"><img src="/frontend/img/p3.jpg" alt=""></a>
-            <a href="/frontend/img/p4.jpg"><img src="/frontend/img/p4.jpg" alt=""></a>
-            <a href="/frontend/img/p5.jpg"><img src="/frontend/img/p5.jpg" alt=""></a>
-            <a href="/frontend/img/p6.jpg"><img src="/frontend/img/p6.jpg" alt=""></a>
-            <a href="/frontend/img/p7.jpg"><img src="/frontend/img/p7.jpg" alt=""></a>
-            <a href="/frontend/img/p8.jpg"><img src="/frontend/img/p8.jpg" alt=""></a>
-            <a href="/frontend/img/p9.jpg"><img src="/frontend/img/p9.jpg" alt=""></a>
-            <a href="/frontend/img/p10.jpg"><img src="/frontend/img/p10.jpg" alt=""></a>
-            <a href="/frontend/img/p11.jpg"><img src="/frontend/img/p11.jpg" alt=""></a>
-            <a href="/frontend/img/p12.jpg"><img src="/frontend/img/p12.jpg" alt=""></a>
-            <a href="/frontend/img/p13.jpg"><img src="/frontend/img/p13.jpg" alt=""></a>
-            <a href="/frontend/img/p14.jpg"><img src="/frontend/img/p14.jpg" alt=""></a>
-            <a href="/frontend/img/p15.jpg"><img src="/frontend/img/p15.jpg" alt=""></a>
-            <a href="/frontend/img/p16.jpg"><img src="/frontend/img/p16.jpg" alt=""></a>
-                            
+            @foreach ($uploads as $img)
+                <a href="{{ url('files/'.$img['hash'].'/'.$img['name']) }}"><img src="{{  url('files/'.$img['hash'].'/'.$img['name']) }}" alt="{{ $img['caption'] }}"></a>
+            @endforeach
         </div>
     </div>
 </section>
